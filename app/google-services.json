@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "695271241071",
+    "project_id": "let-s-play-music",
+    "storage_bucket": "let-s-play-music.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695271241071:android:d9eb36f406e48a7e0f649a",
+        "android_client_info": {
+          "package_name": "com.example.lets_play"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695271241071-reegesprap5chjr4s12snk3vagv41e4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUZwsdgfNSC-pGD_OyADNFde0HrW3iVhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695271241071-reegesprap5chjr4s12snk3vagv41e4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

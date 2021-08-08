@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lets_play">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Let&apos; Play Music"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lets_Play">
+        <activity android:name=".Splash"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlaySong"
+            android:label="Now Playing" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <!-- for using the Service -->
+        <service android:name=".MusicService" android:enabled="true" />
+        <receiver android:name=".NotificationReceiver" android:enabled="true">
+            <intent-filter>
+                 <action android:name="NEXT"/>
+                 <action android:name="PREVIOUS"/>
+                 <action android:name="PAUSE"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".MyService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
